@@ -1,23 +1,25 @@
 openapi: 3.0.4
 info:
   title: Hashtag Generator
-  description: Hashtag Generator is a simple tool for generating hashtags. It returns a list of hashtags based on the text provided.
+  description: >-
+    Hashtag Generator is a simple tool for generating hashtags. It returns a
+    list of hashtags based on the text provided.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
     email: hello@apiverve.com
     url: https://apiverve.com/contact
-  version: 1.0.9
+  version: 1.0.0
 externalDocs:
   description: Learn more about APIVerve
   url: https://docs.apiverve.com?utm_source=openapi
 servers:
-- url: https://api.apiverve.com/
+  - url: https://api.apiverve.com/
 paths:
   /v1/hashtaggenerator:
     post:
       summary: Generate Hashtags
-      description: Hashtag Generator is a simple tool for generating hashtags. It returns a list of hashtags based on the text provided.
+      description: Generate hashtags from text
       operationId: hashtaggenerator
       parameters: []
       responses:
@@ -35,25 +37,25 @@ paths:
                     type: string
                     description: error
                   data:
-                    type: string
+                    type: object
                     description: data
               example:
                 status: ok
-                error: 
+                error: null
                 data:
                   count: 5
                   hashtags:
-                  - '#adventure'
-                  - '#awaits'
-                  - '#ready'
-                  - '#embark'
-                  - '#journey'
+                    - '#adventure'
+                    - '#awaits'
+                    - '#ready'
+                    - '#embark'
+                    - '#journey'
         '401':
           description: Your request was not authorized, or your API Key was invalid
         '404':
           description: Requested resource was not found
         '500':
-          description: A server error has occured, try again later
+          description: A server error has occurred, try again later
       requestBody:
         required: true
         content:
@@ -64,12 +66,11 @@ paths:
                 text:
                   type: string
                   description: The text to generate hashtags from
-                  example: "Adventure awaits \U0001F30D✈️ Who's ready to embark on a journey of a lifetime? Whether you're exploring exotic landscapes, immersing yourself in vibrant cultures, or simply indulging in delicious cuisines, there's something magical about travel that fills the soul with joy and wonder. Let's wander together and create unforgettable memories! \U0001F31F"
+                count:
+                  type: number
+                  description: Number of hashtags to generate. 1 to 10)
               required:
-              - text
-              example:
-                text: "Adventure awaits \U0001F30D✈️ Who's ready to embark on a journey of a lifetime? Whether you're exploring exotic landscapes, immersing yourself in vibrant cultures, or simply indulging in delicious cuisines, there's something magical about travel that fills the soul with joy and wonder. Let's wander together and create unforgettable memories! \U0001F31F"
-                count: 5
+                - text
 components:
   securitySchemes:
     api_key:
@@ -77,4 +78,12 @@ components:
       name: x-api-key
       in: header
 security:
-- api_key: []
+  - api_key: []
+sampleRequest:
+  text: >-
+    Adventure awaits 🌍✈️ Who's ready to embark on a journey of a lifetime?
+    Whether you're exploring exotic landscapes, immersing yourself in vibrant
+    cultures, or simply indulging in delicious cuisines, there's something
+    magical about travel that fills the soul with joy and wonder. Let's wander
+    together and create unforgettable memories! 🌟
+  count: 5
