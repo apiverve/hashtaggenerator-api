@@ -15,5 +15,11 @@ namespace APIVerve.API.HashtagGenerator
         /// </summary>
         [JsonProperty("text")]
         public string Text { get; set; }
+
+        /// <summary>
+        /// Number of hashtags to generate. 1 to 10)
+        /// </summary>
+        [JsonProperty("count")]
+        public string Count { get; set; }
     }
 }
