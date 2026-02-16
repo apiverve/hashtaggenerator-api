@@ -44,7 +44,10 @@ from apiverve_hashtaggenerator.apiClient import HashtaggeneratorAPIClient
 # Initialize the client with your APIVerve API key
 api = HashtaggeneratorAPIClient("[YOUR_API_KEY]")
 
-query = { "text": "Adventure awaits 🌍✈️ Who's ready to embark on a journey of a lifetime? Whether you're exploring exotic landscapes, immersing yourself in vibrant cultures, or simply indulging in delicious cuisines, there's something magical about travel that fills the soul with joy and wonder. Let's wander together and create unforgettable memories! 🌟", "count": 5 }
+query = {
+    "text": "Adventure awaits 🌍✈️ Who's ready to embark on a journey of a lifetime? Whether you're exploring exotic landscapes, immersing yourself in vibrant cultures, or simply indulging in delicious cuisines, there's something magical about travel that fills the soul with joy and wonder. Let's wander together and create unforgettable memories! 🌟",
+    "count": 5
+}
 
 try:
     # Make the API call
@@ -82,7 +85,10 @@ Using the API client, you can perform requests to the API.
 ###### Define Query
 
 ```python
-query = { "text": "Adventure awaits 🌍✈️ Who's ready to embark on a journey of a lifetime? Whether you're exploring exotic landscapes, immersing yourself in vibrant cultures, or simply indulging in delicious cuisines, there's something magical about travel that fills the soul with joy and wonder. Let's wander together and create unforgettable memories! 🌟", "count": 5 }
+query = {
+    "text": "Adventure awaits 🌍✈️ Who's ready to embark on a journey of a lifetime? Whether you're exploring exotic landscapes, immersing yourself in vibrant cultures, or simply indulging in delicious cuisines, there's something magical about travel that fills the soul with joy and wonder. Let's wander together and create unforgettable memories! 🌟",
+    "count": 5
+}
 ```
 
 ###### Simple Request
@@ -127,7 +133,10 @@ from apiverve_hashtaggenerator.apiClient import HashtaggeneratorAPIClient, Hasht
 
 api = HashtaggeneratorAPIClient("[YOUR_API_KEY]")
 
-query = { "text": "Adventure awaits 🌍✈️ Who's ready to embark on a journey of a lifetime? Whether you're exploring exotic landscapes, immersing yourself in vibrant cultures, or simply indulging in delicious cuisines, there's something magical about travel that fills the soul with joy and wonder. Let's wander together and create unforgettable memories! 🌟", "count": 5 }
+query = {
+    "text": "Adventure awaits 🌍✈️ Who's ready to embark on a journey of a lifetime? Whether you're exploring exotic landscapes, immersing yourself in vibrant cultures, or simply indulging in delicious cuisines, there's something magical about travel that fills the soul with joy and wonder. Let's wander together and create unforgettable memories! 🌟",
+    "count": 5
+}
 
 try:
     result = api.execute(query)
@@ -148,7 +157,10 @@ from apiverve_hashtaggenerator.apiClient import HashtaggeneratorAPIClient, Hasht
 
 api = HashtaggeneratorAPIClient("[YOUR_API_KEY]")
 
-query = { "text": "Adventure awaits 🌍✈️ Who's ready to embark on a journey of a lifetime? Whether you're exploring exotic landscapes, immersing yourself in vibrant cultures, or simply indulging in delicious cuisines, there's something magical about travel that fills the soul with joy and wonder. Let's wander together and create unforgettable memories! 🌟", "count": 5 }
+query = {
+    "text": "Adventure awaits 🌍✈️ Who's ready to embark on a journey of a lifetime? Whether you're exploring exotic landscapes, immersing yourself in vibrant cultures, or simply indulging in delicious cuisines, there's something magical about travel that fills the soul with joy and wonder. Let's wander together and create unforgettable memories! 🌟",
+    "count": 5
+}
 
 try:
     result = api.execute(query)
@@ -182,7 +194,10 @@ The client supports the context manager protocol for automatic resource cleanup:
 ```python
 from apiverve_hashtaggenerator.apiClient import HashtaggeneratorAPIClient, HashtaggeneratorAPIClientError
 
-query = { "text": "Adventure awaits 🌍✈️ Who's ready to embark on a journey of a lifetime? Whether you're exploring exotic landscapes, immersing yourself in vibrant cultures, or simply indulging in delicious cuisines, there's something magical about travel that fills the soul with joy and wonder. Let's wander together and create unforgettable memories! 🌟", "count": 5 }
+query = {
+    "text": "Adventure awaits 🌍✈️ Who's ready to embark on a journey of a lifetime? Whether you're exploring exotic landscapes, immersing yourself in vibrant cultures, or simply indulging in delicious cuisines, there's something magical about travel that fills the soul with joy and wonder. Let's wander together and create unforgettable memories! 🌟",
+    "count": 5
+}
 
 # Using context manager ensures proper cleanup
 with HashtaggeneratorAPIClient("[YOUR_API_KEY]") as api:
@@ -208,7 +223,10 @@ from apiverve_hashtaggenerator.apiClient import HashtaggeneratorAPIClient
 # Enable debug mode
 api = HashtaggeneratorAPIClient("[YOUR_API_KEY]", debug=True)
 
-query = { "text": "Adventure awaits 🌍✈️ Who's ready to embark on a journey of a lifetime? Whether you're exploring exotic landscapes, immersing yourself in vibrant cultures, or simply indulging in delicious cuisines, there's something magical about travel that fills the soul with joy and wonder. Let's wander together and create unforgettable memories! 🌟", "count": 5 }
+query = {
+    "text": "Adventure awaits 🌍✈️ Who's ready to embark on a journey of a lifetime? Whether you're exploring exotic landscapes, immersing yourself in vibrant cultures, or simply indulging in delicious cuisines, there's something magical about travel that fills the soul with joy and wonder. Let's wander together and create unforgettable memories! 🌟",
+    "count": 5
+}
 
 # Debug information will be printed to console
 result = api.execute(query)
@@ -223,8 +241,12 @@ from apiverve_hashtaggenerator.apiClient import HashtaggeneratorAPIClient
 
 api = HashtaggeneratorAPIClient("[YOUR_API_KEY]")
 
+query = {
+    "text": "Adventure awaits 🌍✈️ Who's ready to embark on a journey of a lifetime? Whether you're exploring exotic landscapes, immersing yourself in vibrant cultures, or simply indulging in delicious cuisines, there's something magical about travel that fills the soul with joy and wonder. Let's wander together and create unforgettable memories! 🌟",
+    "count": 5
+}
+
 try:
-    query = { "text": "Adventure awaits 🌍✈️ Who's ready to embark on a journey of a lifetime? Whether you're exploring exotic landscapes, immersing yourself in vibrant cultures, or simply indulging in delicious cuisines, there's something magical about travel that fills the soul with joy and wonder. Let's wander together and create unforgettable memories! 🌟", "count": 5 }
     result = api.execute(query)
     print(result)
 finally:
