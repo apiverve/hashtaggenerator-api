@@ -26,7 +26,7 @@ Add the dependency:
 
 ```gradle
 dependencies {
-    implementation 'com.github.apiverve:hashtaggenerator-api:1.1.13'
+    implementation 'com.github.apiverve:hashtaggenerator-api:1.1.14'
 }
 ```
 
@@ -47,7 +47,7 @@ HashtagGeneratorAPIClient client = new HashtagGeneratorAPIClient("YOUR_API_KEY")
 try {
     // Prepare request parameters
     Map<String, Object> parameters = new HashMap<>();
-    parameters.put("text", "");
+    parameters.put("text", "Adventure awaits 🌍✈️ Who's ready to embark on a journey of a lifetime? Whether you're exploring exotic landscapes, immersing yourself in vibrant cultures, or simply indulging in delicious cuisines, there's something magical about travel that fills the soul with joy and wonder. Let's wander together and create unforgettable memories! 🌟");
     parameters.put("count", 5);
 
     // Execute the request
