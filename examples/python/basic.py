@@ -14,14 +14,21 @@ API_URL = 'https://api.apiverve.com/v1/hashtaggenerator'
 
 def call_hashtaggenerator_api():
     """
-    Make a GET request to the Hashtag Generator API
+    Make a POST request to the Hashtag Generator API
     """
     try:
+        # Request body
+        request_body &#x3D; {
+    &#x27;text&#x27;: &#x27;Adventure awaits 🌍✈️ Who&#x27;s ready to embark on a journey of a lifetime? Whether you&#x27;re exploring exotic landscapes, immersing yourself in vibrant cultures, or simply indulging in delicious cuisines, there&#x27;s something magical about travel that fills the soul with joy and wonder. Let&#x27;s wander together and create unforgettable memories! 🌟&#x27;,
+    &#x27;count&#x27;: 5
+}
+
         headers = {
-            'x-api-key': API_KEY
+            'x-api-key': API_KEY,
+            'Content-Type': 'application/json'
         }
 
-        response = requests.get(API_URL, headers=headers)
+        response = requests.post(API_URL, headers=headers, json=request_body)
 
         # Raise exception for HTTP errors
         response.raise_for_status()
