@@ -4,17 +4,29 @@ declare module '@apiverve/hashtaggenerator' {
     secure?: boolean;
   }
 
+  /**
+   * Describes fields the current plan does not unlock. Locked fields arrive as null
+   * in `data`; `locked_fields` names them, using dot paths for nested fields.
+   * Absent when the plan unlocks everything.
+   */
+  export interface PremiumInfo {
+    message: string;
+    upgrade_url: string;
+    locked_fields: string[];
+  }
+
   export interface hashtaggeneratorResponse {
     status: string;
     error: string | null;
     data: HashtagGeneratorData;
     code?: number;
+    premium?: PremiumInfo;
   }
 
 
   interface HashtagGeneratorData {
-      count:    number;
-      hashtags: string[];
+      count:    number | null;
+      hashtags: (null | string)[];
   }
 
   export default class hashtaggeneratorWrapper {
