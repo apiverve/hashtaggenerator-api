@@ -1,13 +1,13 @@
-# [Hashtag Generator API](https://apiverve.com/marketplace/hashtaggenerator?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+# [Hashtag Generator API](https://apiverve.com/marketplace/hashtaggenerator?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 
-Hashtag Generator is a simple tool for generating hashtags. It returns a list of hashtags based on the text provided.
+Hashtag Generator creates relevant hashtags from any plain text or post caption. Pass in a text snippet to receive an array of suggested social tags, with paid plans able to customize the tag count.
 
 The Hashtag Generator API provides a simple, reliable way to integrate hashtag generator functionality into your applications. Built for developers who need production-ready hashtag generator capabilities without the complexity of building from scratch.
 
-**[View API Details →](https://apiverve.com/marketplace/hashtaggenerator?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)**
+**[View API Details →](https://apiverve.com/marketplace/hashtaggenerator?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://apiverve.com/marketplace/hashtaggenerator?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://apiverve.com/marketplace/hashtaggenerator?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 [![Method](https://img.shields.io/badge/Method-POST-blue.svg)](#)
 [![Platform](https://img.shields.io/badge/Platform-Multi--Platform-orange.svg)](#installation)
 
@@ -169,7 +169,7 @@ go get github.com/apiverve/hashtaggenerator-api/go
 
 ## Documentation
 
-- 🏠 **API Home:** [Hashtag Generator API](https://apiverve.com/marketplace/hashtaggenerator?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+- 🏠 **API Home:** [Hashtag Generator API](https://apiverve.com/marketplace/hashtaggenerator?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 - 📚 **API Reference:** [docs.apiverve.com/ref/hashtaggenerator](https://docs.apiverve.com/ref/hashtaggenerator)
 - 📖 **OpenAPI Spec:** [openapi.yaml](./openapi.yaml)
 - 💡 **Examples:** [examples/](./examples/)
@@ -235,7 +235,7 @@ A real response from the Hashtag Generator API:
 
 ## Support & Community
 
-- 🏠 **API Home**: [Hashtag Generator API](https://apiverve.com/marketplace/hashtaggenerator?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+- 🏠 **API Home**: [Hashtag Generator API](https://apiverve.com/marketplace/hashtaggenerator?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 - 💬 **Support**: [https://apiverve.com/contact](https://apiverve.com/contact)
 - 🐛 **Issues**: [GitHub Issues](../../issues)
 - 📖 **Documentation**: [https://docs.apiverve.com](https://docs.apiverve.com)
