@@ -1,6 +1,6 @@
 # Hashtag Generator API - PHP Package
 
-Hashtag Generator is a simple tool for generating hashtags. It returns a list of hashtags based on the text provided.
+Hashtag Generator creates relevant hashtags from any plain text or post caption. Pass in a text snippet to receive an array of suggested social tags, with paid plans able to customize the tag count.
 
 ## Installation
 
@@ -91,11 +91,11 @@ $client = new Client(
 
 ## Documentation
 
-For more information, visit the [API Documentation](https://docs.apiverve.com/ref/hashtaggenerator?utm_source=packagist&utm_medium=readme).
+For more information, visit the [API Documentation](https://docs.apiverve.com/ref/hashtaggenerator?utm_source=packagist&utm_medium=referral&utm_content=readme).
 
 ## Support
 
-- Website: [https://apiverve.com/marketplace/hashtaggenerator?utm_source=php&utm_medium=readme](https://apiverve.com/marketplace/hashtaggenerator?utm_source=php&utm_medium=readme)
+- Website: [https://apiverve.com/marketplace/hashtaggenerator?utm_source=php&utm_medium=referral&utm_content=readme](https://apiverve.com/marketplace/hashtaggenerator?utm_source=php&utm_medium=referral&utm_content=readme)
 - Email: hello@apiverve.com
 
 ## License
