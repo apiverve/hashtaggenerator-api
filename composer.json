@@ -1,7 +1,7 @@
 {
     "name": "apiverve/hashtaggenerator",
-    "description": "Hashtag Generator is a simple tool for generating hashtags. It returns a list of hashtags based on the text provided.",
-    "version": "1.2.0",
+    "description": "Hashtag Generator creates relevant hashtags from any plain text or post caption. Pass in a text snippet to receive an array of suggested social tags, with paid plans able to customize the tag count.",
+    "version": "1.2.2",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -15,13 +15,13 @@
         "api",
         "apiverve",
         "hashtaggenerator",
-        "hashtag generator",
         "hashtag generator api",
-        "hashtag generator tool",
-        "hashtag generator software",
-        "hashtag generator service"
+        "generate hashtags from text",
+        "hashtag suggestion",
+        "text to hashtag",
+        "social media hashtags"
     ],
-    "homepage": "https://apiverve.com/marketplace/hashtaggenerator?utm_source=php&utm_medium=homepage",
+    "homepage": "https://apiverve.com/marketplace/hashtaggenerator?utm_source=php&utm_medium=referral&utm_content=homepage",
     "support": {
         "email": "hello@apiverve.com",
         "docs": "https://docs.apiverve.com/ref/hashtaggenerator",
