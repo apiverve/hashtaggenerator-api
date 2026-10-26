@@ -37,6 +37,21 @@ namespace APIVerve.API.HashtagGenerator
 
         [JsonProperty("hashtags")]
         public string[] Hashtags { get; set; }
+
+        [JsonProperty("topicHashtags")]
+        public TopicHashtag[] TopicHashtags { get; set; }
+    }
+
+    public partial class TopicHashtag
+    {
+        [JsonProperty("hashtag")]
+        public string Hashtag { get; set; }
+
+        [JsonProperty("phrase")]
+        public string Phrase { get; set; }
+
+        [JsonProperty("relevance")]
+        public double? Relevance { get; set; }
     }
 
     public partial class Premium
