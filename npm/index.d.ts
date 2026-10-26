@@ -25,8 +25,15 @@ declare module '@apiverve/hashtaggenerator' {
 
 
   interface HashtagGeneratorData {
-      count:    number | null;
-      hashtags: (null | string)[];
+      count:         number | null;
+      hashtags:      (null | string)[];
+      topicHashtags: TopicHashtag[];
+  }
+  
+  interface TopicHashtag {
+      hashtag:   null | string;
+      phrase:    null | string;
+      relevance: number | null;
   }
 
   export default class hashtaggeneratorWrapper {

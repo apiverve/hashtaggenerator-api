@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/hashtaggenerator",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Hashtag Generator creates relevant hashtags from any plain text or post caption. Pass in a text snippet to receive an array of suggested social tags, with paid plans able to customize the tag count.",
   "main": "index.js",
   "types": "index.d.ts",
