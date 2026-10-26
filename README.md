@@ -226,6 +226,33 @@ A real response from the Hashtag Generator API:
       "#ready",
       "#embark",
       "#journey"
+    ],
+    "topicHashtags": [
+      {
+        "hashtag": "#Adventure",
+        "phrase": "adventure",
+        "relevance": 0.579
+      },
+      {
+        "hashtag": "#Travel",
+        "phrase": "travel",
+        "relevance": 0.567
+      },
+      {
+        "hashtag": "#Journey",
+        "phrase": "journey",
+        "relevance": 0.48
+      },
+      {
+        "hashtag": "#ExoticLandscapes",
+        "phrase": "exotic landscapes",
+        "relevance": 0.436
+      },
+      {
+        "hashtag": "#VibrantCultures",
+        "phrase": "vibrant cultures",
+        "relevance": 0.314
+      }
     ]
   }
 }
