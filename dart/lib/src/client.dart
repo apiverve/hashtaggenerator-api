@@ -46,7 +46,7 @@ final _formatPatterns = {
 
 /// Hashtag Generator API client.
 ///
-/// For more information, visit: https://apiverve.com/marketplace/hashtaggenerator?utm_source=dart&utm_medium=readme
+/// For more information, visit: https://apiverve.com/marketplace/hashtaggenerator?utm_source=dart&utm_medium=referral&utm_content=readme
 ///
 /// Parameters:
 /// * [text] (required) - The text to generate hashtags from
